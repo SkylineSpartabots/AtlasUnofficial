@@ -37,7 +37,7 @@ public class ShooterSubsystem extends SubsystemBase {
      //config motor here :D
   }
  
-  enum MotorSpeeds {
+  public enum MotorSpeeds {
     HOLD(0.0),
     OUTTAKE(1.0),
     INTAKE(-1.0);
