@@ -21,7 +21,7 @@ public class StartShooter extends Command {
 
     @Override
     public boolean isFinished() {
-        return (timer.hasElapsed(1));
+        return true;
     }
 
 }
