@@ -12,7 +12,7 @@ public class IntakeSubsystem extends SubsystemBase{
 
     private static IntakeSubsystem instance;
 
-    private static IntakeSubsystem getInstance() {
+    public static IntakeSubsystem getInstance() {
         if (instance == null) {
             instance = new IntakeSubsystem();
         }
@@ -48,9 +48,8 @@ public class IntakeSubsystem extends SubsystemBase{
         config.MotorOutput.NeutralMode = neutralMode;
 
         CurrentLimitsConfigs currentLimitsConfigs = new CurrentLimitsConfigs();
-        currentLimitsConfigs.SupplyCurrentLimit = Constants.CurrentLimits.outtakeContinuousCurrentLimit;
+        
         currentLimitsConfigs.SupplyCurrentLimitEnable = true;
-        currentLimitsConfigs.StatorCurrentLimit = Constants.CurrentLimits.outtakePeakCurrentLimit;
         currentLimitsConfigs.StatorCurrentLimitEnable = true;
 
         config.CurrentLimits = currentLimitsConfigs;
