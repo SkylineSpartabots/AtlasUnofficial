@@ -12,7 +12,7 @@ public class IntakeSubsystem extends SubsystemBase{
 
     private static IntakeSubsystem instance;
 
-    private static IntakeSubsystem getInstance() {
+    public static IntakeSubsystem getInstance() {
         if (instance == null) {
             instance = new IntakeSubsystem();
         }
