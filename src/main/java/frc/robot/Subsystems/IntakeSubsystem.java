@@ -20,7 +20,7 @@ public class IntakeSubsystem extends SubsystemBase{
         return instance;
     }
 
-    private enum MotorSpeeds{
+    public enum MotorSpeeds{
         SLOW(0.5),
         FAST(1.0),
         BACKWARDS(-1.0);
